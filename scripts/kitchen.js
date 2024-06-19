@@ -30,5 +30,13 @@ for (const el of elements) {
     observer.observe(el);
 }
 
+document.querySelector('.stol').addEventListener('mouseover', () => {
+    document.querySelector('.eda').style.opacity = '1';
+})
+
+document.querySelector('.stol').addEventListener('mouseout', () => {
+    document.querySelector('.eda').style.opacity = '0';
+})
+
 
 btnBurger()

@@ -19,7 +19,6 @@ export const swiper2 = new Swiper('.slider', {
         320: {
             slidesPerView: 1,
         },
-
     }
 })
 

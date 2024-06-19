@@ -12,11 +12,11 @@
 .main {
     width: 100%;
     min-height: 100%;
-    background: url(../imgs/кухня/back1.png) no-repeat top /100% 35%;
+    background: url(../imgs/кухня/back1.png) no-repeat top /100% 30%;
 }
 
 .hero {
-    height: 1082px;
+    height: 1050px;
 }
 
 .hero__container {
@@ -26,9 +26,13 @@
 }
 
 .hero__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
     opacity: 0;
     transform: translateY(-1000px);
-    margin-top: 760px;
+    margin-top: 610px;
     padding-right: 50px;
     position: relative;
     transition: 2s;
@@ -39,8 +43,16 @@
     position: absolute;
     border: 2px solid #fff;
     right: 0;
-    top: -140px;
-    height: 312px;
+    top: 22px;
+    height: 268px;
+}
+
+.hero__span {
+    text-align: right;
+    font-family: 'UZ';
+    font-size: 65px;
+    font-weight: 300;
+    margin-bottom: 50px;
 }
 
 .hero__description {
@@ -61,7 +73,6 @@
 
 .etiket {
     padding-bottom: 50px;
-    height: 1215px;
     background: url('../imgs/кухня/back2.png') no-repeat center/cover;
 }
 
@@ -76,9 +87,10 @@
     padding-top: 96px;
 }
 
-.part__2 img{
+.part__2 img {
     width: 100%;
 }
+
 .part__2 {
     max-width: 800px;
 }
@@ -95,6 +107,10 @@
     gap: 50px;
 }
 
+.etiket__text {
+    font-weight: bold;
+}
+
 .etiket__text,
 .etiket__description-2,
 .etiket__description {
@@ -102,8 +118,23 @@
     color: #000;
 }
 
+.etiket__description-2 {
+    margin-bottom: 70px;
+}
 
-.etiket__img img {
+.etiket__img {
+    position: relative;
+}
+
+.eda {
+    opacity: 0;
+    position: absolute;
+    top: -62px;
+    left: 104px;
+    transition: all .3S;
+}
+
+.etiket__img .stol {
     max-width: 262px;
     width: 100%;
     margin-left: 60px;
@@ -130,18 +161,20 @@
 }
 
 .swiper {
+    position: relative;
     padding-bottom: 50px;
 }
 
 .swiper-slide {
     display: flex;
+    width: 90%;
 }
 
 .slide__part-1 {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: start;
-    gap: 300px;
     flex: 1;
 }
 
@@ -150,18 +183,21 @@
     font-size: 70px;
     color: #000;
     height: 14px;
+    margin-bottom: 363px;
 }
 
 .food__description {
     color: #000;
     max-width: 642px;
     text-align: left;
+    margin-bottom: 53px;
 }
 
 .slide__part-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: end;
     flex: 1;
 }
 
@@ -170,6 +206,7 @@
     display: flex;
     align-items: start;
     padding: 43px;
+    gap: 23px;
 }
 
 .ing, .cook {
@@ -201,23 +238,33 @@
 
 .prev {
     position: absolute;
-    top: -459px;
-    right: 793px;
+    top: -500px;
+    left: 10px;
     z-index: 1000;
     cursor: pointer;
 }
 
 .next {
     position: absolute;
-    top: -459px;
-    right: 20px;
+    top: -500px;
+    right: 10px;
     z-index: 1000;
     cursor: pointer;
+}
+
+.download__recept {
+    background-color: #000;
+    padding: 22px 30px;
 }
 
 @media (max-width:1480px) {
     .hero__title {
         font-size: 80px;
         line-height: 80px;
+    }
+
+    .prev,
+    .next {
+        top: -650px;
     }
 }
