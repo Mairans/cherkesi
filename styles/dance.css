@@ -276,6 +276,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    gap: 75px;
 }
 
 .artists__title {
@@ -324,7 +325,7 @@
     font-size: 18px;
     font-weight: 350;
     line-height: 18.18px;
-    margin: 200px 0 0 1353px;
+    margin-left: auto;
     cursor: pointer;
     transition: all .3s;
 }
@@ -334,6 +335,8 @@
 }
 
 .swiper {
+    position: relative;
+    max-width: 1300px;
     padding-top: 150px;
     display: none;
     z-index: 100;
@@ -341,4 +344,49 @@
 
 .swiper-slide {
     text-align: center;
+}
+
+.arrows__box {
+    position: relative;
+}
+
+.arrows__box {
+    position: relative;
+}
+
+.prev {
+    position: absolute;
+    z-index: 100;
+    top: 500px;
+    left: 0;
+}
+
+.next {
+    position: absolute;
+    z-index: 100;
+    top: 500px;
+    right: 0;
+}
+
+.delete {
+    cursor: pointer;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    font-size: 20px;
+    background: transparent;
+    color: #fff;
+    z-index: 5000;
+}
+
+.slide__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.slide__box span {
+    font-family: 'UZ';
 }

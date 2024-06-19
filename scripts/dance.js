@@ -22,7 +22,6 @@ for (const el of elements) {
     observer.observe(el);
 }
 
-
 const btn = document.querySelector('.btn');
 const artists = document.querySelector('.artists');
 const slider = document.querySelector('.swiper');
@@ -36,6 +35,16 @@ btn.addEventListener('click', () => {
 
 const swiper = new Swiper('.swiper', {
     spaceBetween: 20,
+    navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+    },
 });
+
+document.querySelector('.delete').addEventListener('click', () => {
+    artistsInfo.style.display = 'block';
+    slider.style.display = 'none';
+    btn.style.display = 'block'
+})
 
 btnBurger()
