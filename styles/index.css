@@ -680,14 +680,17 @@ body {
 }
 
 .nogmov3 {
+    object-fit: contain;
     width: 51%;
 }
 
 .nogmov2 {
+    object-fit: contain;
     width: 51%;
 }
 
 .nogmov1 {
+    object-fit: contain;
     width: 76%;
 }
 
@@ -700,18 +703,22 @@ body {
 }
 
 .a1 {
+    object-fit: contain;
     width: 40%;
 }
 
 .a1 {
+    object-fit: contain;
     width: 40%;
 }
 
 .mariya1 {
+    object-fit: contain;
     width: 40%;
 }
 
 .mariya2 {
+    object-fit: contain;
     width: 54%;
 }
 
@@ -724,10 +731,12 @@ body {
 }
 
 .idrak1 {
+    object-fit: contain;
     width: 50%;
 }
 
 .idrak2 {
+    object-fit: contain;
     width: 32%;
 }
 
@@ -754,7 +763,7 @@ body {
 .date span {
     color: #000;
     font-family: 'UZ';
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .date {
@@ -845,6 +854,13 @@ body {
     }
 }
 
+@media (max-width:1625px) {
+    .date span {
+        font-size: 20px;
+    }
+
+}
+
 @media (max-width:1400px) {
     .info__slide .name b {
         font-size: 30px;
@@ -859,17 +875,30 @@ body {
     }
 }
 
-@media (max-width:1171px) {
+@media (max-width:1200px) {
     .sub__logo-box {
         margin: 0 auto;
     }
 
     .main__p {
         font-size: 87px;
+        line-height: 87px;
     }
 
     .main__second-btn {
         font-size: 8px;
+    }
+
+    .main__second-img {
+        left: 0;
+    }
+
+    .person__title::after {
+        right: -150px;
+    }
+
+    .person__title::before {
+        left: -150px;
     }
 }
 
