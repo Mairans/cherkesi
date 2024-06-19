@@ -342,20 +342,3 @@
 .swiper-slide {
     text-align: center;
 }
-
-.dance__card:hover .video {
-    display: block;
-}
-
-.dance__img {
-    transition: all .3s;
-}
-
-.dance__card:hover .dance__img {
-    display: none;
-}
-
-.video {
-    display: none;
-    transition: all .3s;
-}
