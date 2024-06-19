@@ -255,6 +255,7 @@
 .download__recept {
     background-color: #000;
     padding: 22px 30px;
+    font-family: 'UZ';
 }
 
 @media (max-width:1480px) {
