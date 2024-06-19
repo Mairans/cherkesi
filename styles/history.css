@@ -1,0 +1,421 @@
+@import './header.css';
+@import './reset.css';
+@import './footer.css';
+
+/* animation */
+.animation__el.element__show .hero__container .hero__box {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.animation__el.element__show .arrow-1:first-child {
+    top: 26px;
+    right: -6px;
+    opacity: 1;
+}
+
+.animation__el.element__show .arrow-1 {
+    opacity: 1;
+    top: 54px;
+    right: -93px;
+}
+
+.animation__el.element__show .arrow-1:last-child {
+    opacity: 1;
+    top: 51px;
+    left: 85px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100%;
+    background: url(../imgs/history/back1.png) no-repeat top / 110% 20%;
+}
+
+.hero {
+    height: 990px;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 700px;
+    opacity: 0;
+    transform: translateY(288px);
+    transition:  all 2s;
+}
+
+.hero__description {
+    max-width: 777px;
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    text-align: right;
+}
+
+.hero__title {
+    font-family: 'gazeta';
+    font-size: 108px;
+    line-height: 147.4px;
+}
+
+
+.origin {
+    position: relative;
+    height: 1190.16px;
+    background: url('../imgs/history/back2.png') no-repeat center/cover;
+}
+
+.origin__container {
+    display: flex;
+}
+
+.part__1, .part__2 {
+    padding-top: 84px;
+    width: 50%;
+}
+
+.origin__info {
+    max-width: 841px;
+    margin-bottom: 130px;
+    margin-left: 100px
+}
+
+.title {
+    font-family: 'gazeta';
+    font-size: 134px;
+    font-weight: 400;
+    line-height: 147.4px;
+    text-align: left;
+    color: rgba(60, 61, 26, 1);
+}
+
+.text {
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    text-align: left;
+    color: #000;
+}
+
+.map__name, .vaza__name {
+    text-align: center;
+}
+
+.vaza {
+    width: 47%;
+}
+
+.origin__vaza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 163px;
+}
+
+.par-box {
+    margin-left: 116px;
+    position: relative;
+}
+
+.par-1,
+.par-2 {
+    margin-bottom: 60px;
+    max-width: 776px;
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    text-align: left;
+    color: #000;
+}
+
+.origin__map {
+    position: relative;
+    left: 0;
+    height: auto;
+    max-width: 1022px;
+}
+
+.map {
+    width: 100%;
+    height: auto;
+}
+
+.entry {
+    height: 2305px;
+    background: url('../imgs/history/back3.png') no-repeat top/cover;
+    padding-bottom: 70px;
+}
+
+.entry__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry__title {
+    padding-top: 150px;
+    font-family: 'gazeta';
+    font-size: 134px;
+    line-height: 147.4px;
+    margin-right: auto;
+    color: #000;
+    margin-bottom: 80px;
+}
+
+.block-1 {
+    display: flex;
+    gap: 191px;
+    margin-bottom: 127px;
+}
+
+.tex1 {
+    margin-bottom: 20px;
+}
+
+.img-box, .box {
+    flex: 1;
+}
+
+.znamya {
+    text-align: center;
+}
+
+.znamya-img {
+    max-width: 696px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.second__title {
+    color: rgba(60, 61, 26, 1);
+}
+
+.block-2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+    margin-right: auto;
+}
+
+.text3 {
+    max-width: 967px;
+}
+
+.text4 {
+    max-width: 545px;
+}
+
+.title-box {
+    position: relative;
+}
+
+.rectangle {
+    position: absolute;
+}
+
+.rectangle__title {
+    position: relative;
+}
+
+.rectangle__title::after {
+    content: '';
+    position: absolute;
+    width: 900px;
+    top: 0;
+    top: 75px;
+    left: -81px;
+    border: 2px solid rgba(60, 61, 26, 1);
+}
+
+.rectangle__title::before {
+    content: '';
+    position: absolute;
+    top: 75px;
+    left: -82px;
+    height: 600px;
+    border: 2px solid rgba(60, 61, 26, 1);
+}
+
+.block-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.green {
+    margin-left: 312px;
+}
+
+.arrows__box {
+    position: relative;
+}
+
+.arrow-1 {
+    position: absolute;
+    top: -48px;
+    right: -138px;
+    transform: rotate(-22deg);
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+.arrow-1:first-child {
+    position: absolute;
+    top: -40px;
+    right: -101px;
+    opacity: 0;
+    transform: rotate(-2deg);
+    transition: all 2s;
+}
+
+.arrow-1:last-child {
+    position: absolute;
+    top: -47px;
+    left: 120px;
+    transform: rotate(-28deg);
+    opacity: 0;
+    transition: all 2s;
+}
+
+.text5 {
+    max-width: 630px;
+    margin-left: auto;
+}
+
+.days {
+    height: 1080px;
+    background: linear-gradient(180deg, #FFFFFF 21%, rgba(227, 219, 218, 0.833883) 68%, rgba(183, 164, 161, 0.58) 91.79%);
+    padding-bottom: 100px;
+}
+
+.days__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.days__info {
+    margin-left: auto;
+}
+
+.days__info span {
+    max-width: 513px;
+}
+
+.days__title {
+    padding-top: 150px;
+    font-family: 'gazeta';
+    font-size: 134px;
+    line-height: 147.4px;
+    margin-right: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.days__box {
+    position: relative;
+}
+
+.island {
+    position: absolute;
+    cursor: pointer;
+}
+
+.ad {
+    top: -199px;
+    left: -800px;
+    transition: all .2s;
+}
+
+.kchr {
+    transition: all .2s;
+    top: -19px;
+    left: -331px;
+}
+
+.kchr2 {
+    transition: all .2s;
+    opacity: 0;
+    top: 113px;
+    left: -307px;
+}
+
+.kbr {
+    transition: all .2s;
+    right: -688px;
+    top: 117px;
+}
+
+.kbr2 {
+    transition: all .2s;
+    opacity: 0;
+    right: -682px;
+    top: 265px;
+}
+
+.ad2 {
+    opacity: 0;
+    top: -199px;
+    left: -800px;
+    transition: all .2s;
+}
+
+.adigeya:hover .ad {
+    opacity: 0;
+}
+
+.adigeya:hover .ad2 {
+    opacity: 1;
+}
+
+.kchr__box:hover .kchr {
+    opacity: 0;
+}
+
+.kchr__box:hover .kchr2 {
+    opacity: 1;
+}
+
+.kbr__box:hover .kbr {
+    opacity: 0;
+}
+
+.kbr__box:hover .kbr2 {
+    opacity: 1;
+}
+
+
+@media (max-width:1599px) {
+    .title {
+        font-size: 100px;
+    }
+
+    .map {
+        margin-left: -15px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .title {
+        font-size: 80px;
+    }
+}

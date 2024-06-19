@@ -1,0 +1,105 @@
+.footer {
+    background-color: #19190a;
+    padding-bottom: 50px;
+}
+
+.footer__container {
+    margin: 0 80px;
+}
+
+.nav {
+    padding-top: 50px;
+    margin-bottom: 164px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.religion {
+    margin-right: 100px;
+}
+
+.nav-list link {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.link {
+    font-family: 'UZ';
+    font-size: 20px;
+}
+
+.second-list {
+    margin-top: 20px;
+}
+
+.second-list li {
+    font-family: 'UZ';
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.footer__under {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__footer {
+    width: 70%;
+}
+
+.vtu {
+    width: 12%;
+}
+
+
+.footer__logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.tg::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../imgs/tg.svg') no-repeat;
+}
+
+.whats::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../imgs/whats.svg') no-repeat;
+}
+
+.vk::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 25px;
+    background: url('../imgs/vk.svg') no-repeat;
+}
+
+.a::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../imgs/a.svg') no-repeat;
+}

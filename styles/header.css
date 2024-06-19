@@ -1,0 +1,188 @@
+.header {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 25px;
+    position: sticky;
+}
+
+.header__menu {
+    position: absolute;
+    right: -25px;
+    top: -500px;
+    border-radius: 35px 0 0 35px;
+    padding: 55px 20px 20px 20px;
+    background-color: #000;
+    opacity: .5;
+    transition: .5s linear;
+}
+
+.header__menu ul li {
+    margin-bottom: 15px;
+    font-family: 'UZ';
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.header__menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.header__menu ul li a {
+    font-family: 'UZ';
+}
+
+.burger__menu span{
+    transition: transform .5s, opacity .5s
+}
+
+.header.open .header__container .burger__menu span:nth-child(1) {
+    transform: translate(5px,13px) rotate(135deg);
+}
+
+.header.open .header__container .burger__menu span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header__container .burger__menu span:nth-child(3) {
+    transform: translate(5px,-5px) rotate(45deg);
+}
+
+.header.open .header__container .header__menu {
+    top: -20px;
+}
+
+.sub__logo-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 auto;
+    font-family: 'gazeta';
+}
+
+.sub__logo-title {
+    font-family: 'gazeta';
+    font-size: 22px;
+    display: none;
+}
+
+.sub__logo-img {
+    width: 30px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.burger__menu {
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger__menu span {
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 37px;
+    height: 20px;
+    position: relative;
+}
+
+.star__logo {
+    position: absolute;
+}
+
+.psevdo1 {
+    bottom: 5px;
+    left: 0;
+}
+
+.psevdo2 {
+    left: 2.5px;
+    bottom: 11.12px;
+}
+
+.psevdo3 {
+    left: 6.95px;
+    bottom: 15px;
+}
+
+.psevdo4 {
+    bottom: 17.47px;
+    left: 12px;
+}
+
+.psevdo4::after {
+    position: absolute;
+    content: '';
+    background: url('../imgs/white-star.svg') no-repeat;
+    width: 3px;
+    height: 3px;
+    display: block;
+    bottom: -2px;
+    left: 11.64px;
+}
+
+.psevdo5 {
+    top: -15px;
+    left: 17.25px;
+}
+
+.psevdo5::after {
+    position: absolute;
+    content: '';
+    background: url('../imgs/white-star.svg') no-repeat;
+    width: 3px;
+    height: 3px;
+    display: block;
+    top: 15px;
+    left: 0;
+}
+
+.psevdo6 {
+    bottom: 17.47px;
+    right: 12px;
+}
+
+.psevdo6::after {
+    transition: all 6s ease-in-out;
+    position: absolute;
+    content: '';
+    background: url('../imgs/white-star.svg') no-repeat;
+    width: 3px;
+    height: 3px;
+    display: block;
+    bottom: -2px;
+    right: 12px;
+}
+
+.psevdo7 {
+    right: 6.95px;
+    bottom: 15px;
+}
+
+.psevdo8 {
+    right: 2.5px;
+    bottom: 11.12px;
+}
+
+.psevdo9 {
+    bottom: 5px;
+    right: 0;
+}

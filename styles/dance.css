@@ -1,0 +1,361 @@
+@import './header.css';
+@import './reset.css';
+@import './footer.css';
+
+
+/* animnation */
+
+.hero.animation__el.element__show .hero__container .hero__info {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.main {
+    width: 100%;
+    min-height: 100%;
+    background: url(../imgs/танцы/back1.png) no-repeat top /100% 23%;
+}
+
+.hero {
+    height: 1080px;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.hero__info {
+    margin-top: 700px;
+    position: relative;
+    transition: all 2s;
+}
+
+.hero__info {
+    transform: translateX(-1070px);
+    opacity: 0;
+}
+
+.hero__info::after {
+    content: '';
+    position: absolute;
+    top: -144px;
+    left: -30px;
+    height: 307px;
+    border: 2px solid #fff;
+}
+
+.text {
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    text-align: left;
+}
+
+.info__text {
+    max-width: 536px;
+}
+
+.title {
+    font-family: 'gazeta';
+    font-size: 134px;
+    font-weight: 400;
+    line-height: 147.4px;
+    text-align: left;
+}
+
+.sub__hero {
+    background-color: rgba(60, 61, 26, 1);
+    padding-bottom: 70px;
+}
+
+.sub__hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.sub__title {
+    font-family: 'UZ';
+    font-size: 66px;
+    font-weight: 350;
+    line-height: 66.68px;
+    text-align: left;
+    max-width: 1521px;
+    margin-top: 123px;
+    border: 2px solid #fff;
+    border-width: 0 0 2px 0;
+    padding-bottom: 50px;
+}
+
+.sub__description {
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    text-align: left;
+    max-width: 772px;
+    margin-top: 66px;
+}
+
+.music {
+    background: url('../imgs/танцы/back2.png') no-repeat center/cover;
+    height: 656px;
+}
+
+.music__info {
+    max-width: 432px;
+    padding-top: 66px;
+}
+
+.dance__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.dance__info {
+    padding-top: 86px;
+}
+
+.dance__info .title {
+    color: rgba(60, 61, 26, 1);
+}
+
+.dance__info .sub__description {
+    color: rgba(0, 0, 0, 1);
+    max-width: 444px;
+}
+
+.dance__cards {
+    width: 100%;
+    margin-bottom: 67px;
+}
+
+.dance__top {
+    display: flex;
+    gap: 352.6px;
+    margin-left: 503px;
+}
+
+.dance__top .dance__card {
+    padding-bottom: 107px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    padding-left: 15px;
+    border-width: 0 0 0 2px;
+}
+
+.dance__bot .dance__card {
+    border: 2px solid rgba(0, 0, 0, 1);
+    padding-left: 15px;
+    border-width: 0 0 0 2px;
+}
+
+.dance__title {
+    cursor: pointer;
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    text-align: left;
+    color: black;
+    margin-bottom: 14px;
+}
+
+.dance__top .dance__card .dance__description {
+    top: -150px;
+}
+
+.kafa__des {
+    opacity: 0;
+    left: 0;
+}
+
+.dance__card:hover .ubih__des {
+    opacity: 1;
+}
+
+.ubih__des {
+    opacity: 0;
+}
+
+.dance__card:hover .islam__des {
+    opacity: 1;
+}
+
+.islam__des {
+    opacity: 0;
+    left: -231px;
+}
+
+.dance__card:hover .kafa__des {
+    opacity: 1;
+}
+
+.dance__bot {
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-width: 2px 0 0 0;
+    display: flex;
+    gap: 348.6px;
+}
+
+.dance__card:hover .udj__des {
+    opacity: 1;
+}
+
+.udj__des {
+    opacity: 0;
+    left: 45px;
+    top: -83px;
+}
+
+.dance__card:hover .zaga__des {
+    opacity: 1;
+}
+
+.dance__card {
+    position: relative;
+}
+
+.dance__card:hover #zaga {
+    opacity: 1;
+}
+
+#zaga {
+    opacity: 0;
+    top: -50px;
+    left: 45px;
+}
+
+.dance__card:hover .lapa__des {
+    opacity: 1;
+}
+
+.lapa__des {
+    opacity: 0;
+}
+
+.dance__bot .dance__card .dance__description {
+    top: -37px;
+}
+
+.dance__bot .dance__card {
+    padding-top: 75px;
+}
+
+.dance__description {
+    transition: .3s;
+    background-color: rgb(179 179 179);
+    width: 425px;
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    text-align: left;
+    border-radius: 48px;
+    padding: 20px;
+    position: absolute;
+}
+
+.box-videos {
+    display: flex;
+}
+
+.artists {
+    background: url('../imgs/танцы/back3.png') no-repeat center/cover;
+    height: 1080px;
+}
+
+.artists__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.artists__title {
+    padding-top: 88px;
+    margin-bottom: 36px;
+}
+
+.artists__text {
+    max-width: 512px;
+    margin-bottom: 54px;
+}
+
+.rectangle {
+    border: 2px solid #fff;
+    width: 1040px;
+    margin-bottom: 64px;
+}
+
+.artists__sub {
+    font-family: 'UZ';
+    font-size: 66px;
+    font-weight: 350;
+    line-height: 66.68px;
+    text-align: left;
+}
+
+.artists__description {
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    text-align: left;
+    max-width: 759px;
+    margin-top: 10px;
+}
+
+.btn {
+    background: transparent;
+    background-color: rgba(255, 255, 255, 1);
+    max-width: 497px;
+    width: 100%;
+    height: 86px;
+    border-radius: 47px;
+    color: #000;
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    margin: 200px 0 0 1353px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.swiper {
+    padding-top: 150px;
+    display: none;
+    z-index: 100;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.dance__card:hover .video {
+    display: block;
+}
+
+.dance__img {
+    transition: all .3s;
+}
+
+.dance__card:hover .dance__img {
+    display: none;
+}
+
+.video {
+    display: none;
+    transition: all .3s;
+}

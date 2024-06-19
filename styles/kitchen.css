@@ -1,0 +1,223 @@
+@import './header.css';
+@import './reset.css';
+@import './footer.css';
+
+/* animation */
+
+.hero.animation__el.element__show .hero__container .hero__info {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.main {
+    width: 100%;
+    min-height: 100%;
+    background: url(../imgs/кухня/back1.png) no-repeat top /100% 35%;
+}
+
+.hero {
+    height: 1082px;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.hero__info {
+    opacity: 0;
+    transform: translateY(-1000px);
+    margin-top: 760px;
+    padding-right: 50px;
+    position: relative;
+    transition: 2s;
+}
+
+.hero__info::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #fff;
+    right: 0;
+    top: -140px;
+    height: 312px;
+}
+
+.hero__description {
+    max-width: 694px;
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    text-align: right;
+}
+
+.hero__title {
+    font-family: 'gazeta';
+    font-size: 108px;
+    line-height: 147.4px;
+    text-align: right;
+}
+
+.etiket {
+    padding-bottom: 50px;
+    height: 1215px;
+    background: url('../imgs/кухня/back2.png') no-repeat center/cover;
+}
+
+.etiket__container {
+    display: flex;
+    gap: 20px;
+}
+
+.part__1,
+.part__2 {
+    flex: 1;
+    padding-top: 96px;
+}
+
+.part__2 img{
+    width: 100%;
+}
+.part__2 {
+    max-width: 800px;
+}
+
+.etiket__title {
+    color: #000;
+    text-align: left;
+}
+
+.etiket__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.etiket__text,
+.etiket__description-2,
+.etiket__description {
+    text-align: left;
+    color: #000;
+}
+
+
+.etiket__img img {
+    max-width: 262px;
+    width: 100%;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.etiket__description-white {
+    color: #fff;
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
+    max-width: 812px;
+    padding: 90px;
+    background-color: #323030;
+}
+
+.foods__title {
+    padding-top: 110px;
+}
+
+.foods__title {
+    margin-bottom: 100px;
+}
+
+.swiper {
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+.slide__part-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 300px;
+    flex: 1;
+}
+
+.name {
+    font-family: 'ultramono';
+    font-size: 70px;
+    color: #000;
+    height: 14px;
+}
+
+.food__description {
+    color: #000;
+    max-width: 642px;
+    text-align: left;
+}
+
+.slide__part-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.recept {
+    background-color: #323030;
+    display: flex;
+    align-items: start;
+    padding: 43px;
+}
+
+.ing, .cook {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-family: 'UZ';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18.18px;
+    flex: 1;
+}
+
+.ing li, .cook li {
+    font-family: 'UZ';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18.18px;
+}
+
+.ing li:first-child, .cook li:first-child {
+    margin-bottom: 10px;
+}
+
+.arrows__box {
+    position: relative;
+}
+
+.prev {
+    position: absolute;
+    top: -459px;
+    right: 793px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    top: -459px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+@media (max-width:1480px) {
+    .hero__title {
+        font-size: 80px;
+        line-height: 80px;
+    }
+}
