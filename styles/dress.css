@@ -75,18 +75,20 @@
     text-align: left;
 }
 
-.fashe {
-    height: 1080px;
-}
-
 .fashe__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 150px;
 }
 
 .fashe__title {
     color: #000;
+}
+
+.col1 img {
+    width: 100%;
+    margin-bottom: 126px;
 }
 
 .par {
@@ -97,6 +99,7 @@
     font-weight: 350;
     line-height: 18.18px;
     text-align: left;
+    flex: 1;
 }
 
 .par-1 {
@@ -196,14 +199,15 @@
 
 .acces__title {
     color: #000;
-    margin-bottom: 60px;
+    margin-bottom: 24px;
 }
 
 .title__box {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: start;
+    gap: 70px;
+    width: 100%;
+    align-items: start;
 }
 
 .woman {
@@ -213,7 +217,7 @@
     line-height: 66.68px;
     text-align: left;
     color: #000;
-    margin-right: 180px;
+    margin-bottom: 24px;
 }
 
 .box-2 {
@@ -224,7 +228,7 @@
 }
 
 .accessories__description {
-    max-width: 516px;
+    max-width: 519px;
     color: #000;
 }
 
@@ -284,7 +288,9 @@
 .box-3 {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: start;
     margin-bottom: 80px;
 }
 
