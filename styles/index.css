@@ -384,8 +384,21 @@ body {
 
 .peoples__container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
+    gap: 100px;
+}
+
+.peoples__tutle {
+    text-align: center;
+    font-size: 117px;
+    font-family: 'gazeta';
+}
+
+.peoples__2 {
+    display: flex;
+    width: 100%;
     gap: 100px;
 }
 
