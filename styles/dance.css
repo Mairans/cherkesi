@@ -110,28 +110,29 @@
 .music__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .music__info {
     max-width: 432px;
     padding-top: 66px;
     text-align: left;
-    margin-right: 187px;
 }
 
 .slider {
     max-width: 1400px;
     overflow: hidden;
+
 }
 
 .swiper-slide {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: start;
 }
 
-.swiper-slide img{
-    width: 100%;
+.img--music {
+    width: 30%;
 }
 
 .music__title {
@@ -150,11 +151,11 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-
 }
 
 .dance__info {
     padding-top: 86px;
+    padding-bottom: 50px;
 }
 
 .dance__info .title {
@@ -167,17 +168,30 @@
 }
 
 .dance__cards {
-    width: 100%;
     margin-bottom: 67px;
+    width: 100%;
+}
+
+.dance__card {
+    max-width: 301px;
+    width: 100%;
+}
+
+.dance__card {
+    margin-right: 200px;
+}
+
+.dance__card:last-child {
+    margin-right: 0;
 }
 
 .dance__top {
     display: flex;
-    gap: 352.6px;
-    margin-left: 503px;
+    justify-content: end;
 }
 
 .dance__top .dance__card {
+    max-width: 301px;
     padding-bottom: 107px;
     border: 2px solid rgba(0, 0, 0, 1);
     padding-left: 15px;
@@ -235,7 +249,6 @@
     border: 2px solid rgba(0, 0, 0, 1);
     border-width: 2px 0 0 0;
     display: flex;
-    gap: 348.6px;
 }
 
 .dance__card:hover .udj__des {
@@ -276,6 +289,7 @@
 
 .dance__bot .dance__card .dance__description {
     top: -37px;
+    right: 0;
 }
 
 .dance__bot .dance__card {
@@ -366,6 +380,10 @@
 
 .btn:hover {
     transform: scale(1.1);
+}
+
+.img--2 {
+    width: 90%;
 }
 
 .swiper {
