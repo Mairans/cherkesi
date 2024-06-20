@@ -103,13 +103,46 @@
 }
 
 .music {
-    background: url('../imgs/танцы/back2.png') no-repeat center/cover;
+    background-color: rgba(60, 61, 26, 1);
     height: 656px;
+}
+
+.music__container {
+    display: flex;
+    align-items: center;
 }
 
 .music__info {
     max-width: 432px;
     padding-top: 66px;
+    text-align: left;
+    margin-right: 187px;
+}
+
+.slider {
+    max-width: 1400px;
+    overflow: hidden;
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {
+    display: flex;
+}
+
+.music__info {}
+
+
+.music__title {
+    margin-bottom: 20px;
+}
+
+.music__title,
+.music__deascrioption {
+    font-family: 'UZ';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 18.18px;
 }
 
 .dance__container {

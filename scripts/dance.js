@@ -41,6 +41,10 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+const swiper2 = new Swiper('.slider', {
+    spaceBetween: 10,
+});
+
 document.querySelector('.delete').addEventListener('click', () => {
     artistsInfo.style.display = 'block';
     slider.style.display = 'none';
