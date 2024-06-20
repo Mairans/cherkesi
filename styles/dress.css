@@ -21,7 +21,7 @@
 .main {
     width: 100%;
     min-height: 100%;
-    background: url(../imgs/одежда/back1.png) no-repeat top /100% 16%;
+    background: url(../imgs/одежда/back1.png) no-repeat top /100% 18%;
 }
 
 .hero {
@@ -35,7 +35,7 @@
 }
 
 .hero__info {
-    margin-top: 225px;
+    margin-top: 350px;
     transform: translateX(-1311px);
     opacity: 0;
     transition: all 2s;
@@ -46,10 +46,7 @@
     font-size: 58px;
     font-weight: 350;
     line-height: 66.68px;
-    max-width: 360px;
-    border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 67px;
-    padding: 49px 23px;
 }
 
 .hero__title {

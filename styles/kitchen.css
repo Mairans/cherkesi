@@ -173,7 +173,7 @@
 .slide__part-1 {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     flex: 1;
 }
@@ -207,6 +207,7 @@
     align-items: start;
     padding: 43px;
     gap: 23px;
+    height: 314px;
 }
 
 .ing, .cook {
