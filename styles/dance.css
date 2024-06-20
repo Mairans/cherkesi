@@ -124,14 +124,15 @@
     overflow: hidden;
 }
 
-.swiper-wrapper {}
-
 .swiper-slide {
     display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
-.music__info {}
-
+.swiper-slide img{
+    width: 35%;
+}
 
 .music__title {
     margin-bottom: 20px;
