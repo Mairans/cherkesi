@@ -256,6 +256,10 @@
     margin-bottom: 10px;
 }
 
+.par__box {
+    flex: 1;
+}
+
 .imgs__box {
     display: flex;
     width: 100%;
