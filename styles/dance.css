@@ -192,7 +192,6 @@
 
 .dance__top .dance__card {
     max-width: 301px;
-    padding-bottom: 107px;
     border: 2px solid rgba(0, 0, 0, 1);
     padding-left: 15px;
     border-width: 0 0 0 2px;
@@ -310,8 +309,26 @@
     position: absolute;
 }
 
-.box-videos {
+.dance__card {
     display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.dance__card:hover iframe {
+    opacity: 1;
+}
+
+.dance__img {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+iframe {
+    opacity: 0;
+    margin-bottom: 10px;
+    transition: all .5s;
 }
 
 .artists {
@@ -441,4 +458,16 @@
 
 .slide__box span {
     font-family: 'UZ';
+}
+
+@media (max-width:1399px) {
+    .dance__card {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width:1199px) {
+    .dance__card {
+        margin-right: 50px;
+    }
 }
