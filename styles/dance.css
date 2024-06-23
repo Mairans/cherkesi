@@ -412,6 +412,10 @@ iframe {
     z-index: 100;
 }
 
+audio {
+    margin-top: 50px;
+}
+
 .swiper-slide {
     text-align: center;
     cursor: pointer;
